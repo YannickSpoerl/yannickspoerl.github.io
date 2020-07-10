@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/YannickSpoerl/yannickspoerl.github.io">
-    <img src="https://github.com/YannickSpoerl/yannickspoerl.github.io/blob/master/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/YannickSpoerl/yannickspoerl.github.io/tree/development/static/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center"><a href="https://www.yannickspoerl.de">YannickSpoerl.de</a></h3>
