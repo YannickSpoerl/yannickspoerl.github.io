@@ -1,3 +1,4 @@
+import messages from './assets/internationalization/index.js'
 
 export default {
   /*
@@ -15,7 +16,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Yannick Spoerl',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -35,7 +36,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '~plugins/loadContent.js'
+    '~plugins/loadContent.js',
+  { src: '~plugins/loadFlagModule.js', ssr: false }
   ],
   /*
   ** Auto import components
@@ -51,11 +53,21 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-i18n'
   ],
+  i18n: {
+    locales: ['en', 'de'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'de',
+      messages: messages
+    }
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    transpile: ['vue-scroll-snap']
   }
 }

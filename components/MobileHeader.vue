@@ -32,6 +32,9 @@
 import { MenuIcon, XIcon } from 'vue-feather-icons'
 
 export default {
+  components: {
+    MenuIcon, XIcon
+  },
   props: {
     isOpen: {
       type: Boolean,
