@@ -60,6 +60,10 @@ export default {
     vueI18n: {
       fallbackLocale: 'de',
       messages: messages
+    },
+    detectBrowserLanguage: {
+      useCookie: true,
+      alwaysRedirect: true
     }
   },
   /*
