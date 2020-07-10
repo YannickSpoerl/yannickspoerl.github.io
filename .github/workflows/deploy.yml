@@ -13,10 +13,10 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
-          npm run build
+          npm run export && npm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: master
-          FOLDER: .nuxt/dist
+          FOLDER: dist
