@@ -10,7 +10,11 @@
     "serve": "nuxt serve"
   },
   "dependencies": {
-    "nuxt": "^2.13.0"
+    "@yannickspoerl/corporate-design-yannickspoerl": "^1.1.0",
+    "nuxt": "^2.13.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "vue-feather-icons": "^5.0.0"
   },
   "devDependencies": {}
 }

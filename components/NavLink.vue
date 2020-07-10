@@ -1,0 +1,54 @@
+<template>
+  <router-link v-if="!isExternal(this.link) && this.link[0] !== '#'"
+    :to="this.link "
+    class="nav-link">
+    <slot/>
+  </router-link>
+  <a v-else
+    :href="computedLink"
+    :target="isMailto(normalizedlink) || isTel(normalizedlink) || this.link[0] === '#' ? null : '_blank'"
+    :rel=" isMailto(normalizedlink) || isTel(normalizedlink) ? null : 'noopener noreferrer'"
+    class="nav-link external">
+    <slot/>
+  </a>
+</template>
+
+<script>
+import { isExternal, isMailto, isTel, ensureExt } from './util'
+
+export default {
+  props: {
+    link: {
+      required: true,
+    },
+  },
+  computed: {
+    computedLink () {
+      if (isExternal(this.link)) return this.link
+      return '/' + this.link
+    },
+    normalizedlink() {
+      if (!this.link) return
+      if (this.$router.currentRoute.path !== '/') return '/' + this.link
+      return ensureExt(this.link)
+    }
+  },
+
+  methods: {
+    isExternal,
+    isMailto,
+    isTel,
+  },
+}
+</script>
+
+<style lang="stylus">
+@import '~assets/style/index'
+
+.nav-link
+  color $darkTextColor
+
+.nav-link
+  &:hover, &.router-link-active
+    color $accentColor
+</style>

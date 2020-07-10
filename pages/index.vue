@@ -1,73 +1,56 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        website
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <div id="vuepress-theme-blog__global-layout">
+    <Header/>
+    <MobileHeader :is-open="isMobileHeaderOpen"
+      @toggle-sidebar="isMobileHeaderOpen = !isMobileHeaderOpen"/>
+    <div :class="$router.currentRoute.path === '/' ? 'content-wrapper-main' : 'content-wrapper'"
+      @click="isMobileHeaderOpen = false">
+      <router-view/>
     </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
-export default {}
+
+export default {
+  data() {
+    return {
+      isMobileHeaderOpen: false,
+    }
+  },
+
+  mounted() {
+    this.isMobileHeaderOpen = false
+  },
+}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="stylus">
+@import '~assets/style/index'
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+#vuepress-theme-blog__global-layout
+  word-wrap break-word
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+.content-wrapper
+  padding 160px 15px 80px 15px
+  min-height calc(100vh - 80px - 60px - 160px)
+  max-width $contentWidth
+  margin 0 auto
 
-.links {
-  padding-top: 15px;
-}
+  @media (max-width: $MQMobile)
+    &
+      padding 100px 15px 20px 15px
+      min-height calc(100vh - 20px - 60px - 100px)
+
+.content-wrapper-main
+  padding-top: 80px
+  width: 100%
+  height: 100%
+  margin 0
+
+  @media (max-width: $MQMobile)
+    &
+      padding 65px 0 0 0
+      min-height calc(100vh - 20px - 60px - 60px)
 </style>
