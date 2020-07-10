@@ -1,12 +1,12 @@
 <br />
 <p align="center">
   <a href="https://github.com/YannickSpoerl/yannickspoerl.github.io">
-    <img src="https://github.com/YannickSpoerl/yannickspoerl.github.io/tree/development/static/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/YannickSpoerl/yannickspoerl.github.io/blob/development/static/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center"><a href="https://www.yannickspoerl.de">YannickSpoerl.de</a></h3>
   <p align="center">
-  <img src="https://img.shields.io/github/license/YannickSpoerl/yannickspoerl.github.io"/>
+  <img src="https://img.shields.io/github/license/yannickspoerl/yannickspoerl.github.io"/>
   <img src="https://img.shields.io/github/package-json/v/yannickspoerl/yannickspoerl.github.io/development"/>
   <img src="https://img.shields.io/github/workflow/status/YannickSpoerl/yannickspoerl.github.io/Build%20and%20Deploy"/>
   </p>
