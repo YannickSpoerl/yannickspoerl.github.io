@@ -24,7 +24,7 @@ export default {
   computed: {
     computedLink () {
       if (isExternal(this.link)) return this.link
-      return '/' + this.link
+      return this.localePath('/') + this.link
     },
     normalizedlink() {
       if (!this.link) return

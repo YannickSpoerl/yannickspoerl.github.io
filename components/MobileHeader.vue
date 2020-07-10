@@ -17,9 +17,9 @@
           class="mobile-nav-item">
           <NavLink :link="item.link">{{ $t('navbar.' + item.text) }}</NavLink>
         </li>
-        <li class="mobile-nav-item" style="cursor: pointer">
-          <nuxt-link v-if="$i18n.locale === 'de'" :to="switchLocalePath('en')">English</nuxt-link>
-          <nuxt-link v-if="$i18n.locale === 'en'" :to="switchLocalePath('de')">Deutsch</nuxt-link>
+        <li class="mobile-nav-item" style="cursor: pointer" @click="$emit('toggle-sidebar')">
+          <nuxt-link v-if="$i18n.locale === 'de'" :to="switchLocalePath('en')">English 🇬🇧</nuxt-link>
+          <nuxt-link v-if="$i18n.locale === 'en'" :to="switchLocalePath('de')">Deutsch 🇩🇪</nuxt-link>
         </li>
         </ul>
       </div>
@@ -40,32 +40,6 @@ export default {
       required: true,
     },
   },
-  data () {
-    return {
-      /**
-       * map locale to flag-iso
-       */
-      flagMapping: {
-        de: 'gb',
-        en: 'de'
-      }
-    }
-  },
-  methods: {
-    /**
-     * change locale and persist in cookie
-     */
-    changeLocale () {
-      this.$emit('toggle-sidebar')
-      if (this.$i18n.locale === 'de') {
-        this.$i18n.locale = 'en'
-        localStorage.setItem('yannickspoerlde-locale', 'en')
-        return
-      }
-      this.$i18n.locale = 'de'
-      localStorage.setItem('yannickspoerlde-locale', 'de')
-    }
-  }
 }
 </script>
 

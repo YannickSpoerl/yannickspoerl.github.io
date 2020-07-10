@@ -10,4 +10,7 @@ const messages = {
   'de': german
 }
 
+/**
+ * export message object
+ */
 export default messages

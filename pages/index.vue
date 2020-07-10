@@ -1,27 +1,29 @@
 <template>
-  <vue-scroll-snap>
-    <div id="hello" class="item">
-      <Hello/>
-    </div>
-    <div id="me" class="item light">
-      <Me/>
-    </div>
-    <div id="socials" class="item">
-      <Socials/>
-    </div>
-    <div id="blog" class="item light">
-      <Blog/>
-    </div>
-    <div id="apps" class="item">
-      <Apps/>
-    </div>
-    <div id="resume" class="item light">
-      <Resume/>
-    </div>
-    <div id="end" class="item">
-      <End/>
-    </div>
-  </vue-scroll-snap>
+  <div class="content-wrapper-main">
+    <vue-scroll-snap>
+      <div id="hello" class="item">
+        <Hello/>
+      </div>
+      <div id="me" class="item light">
+        <Me/>
+      </div>
+      <div id="socials" class="item">
+        <Socials/>
+      </div>
+      <div id="blog" class="item light">
+        <Blog/>
+      </div>
+      <div id="apps" class="item">
+        <Apps/>
+      </div>
+      <div id="resume" class="item light">
+        <Resume/>
+      </div>
+      <div id="end" class="item">
+        <End/>
+      </div>
+    </vue-scroll-snap>
+  </div>
 </template>
 
 <script>
@@ -37,6 +39,17 @@ export default {
 
 <style lang="stylus">
 @import '~assets/style/index'
+
+.content-wrapper-main
+  padding-top: 80px
+  width: 100%
+  height: 100%
+  margin 0
+
+  @media (max-width: $MQMobile)
+    &
+      padding 65px 0 0 0
+      min-height calc(100vh - 20px - 60px - 60px)
 
 p.text
   font-size 22px

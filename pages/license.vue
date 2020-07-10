@@ -1,6 +1,6 @@
 <template>
-    <div class="content__default">
-        <div v-if="$i18n.locale === 'en'">
+    <div class="content-wrapper">
+        <div class="content__default" v-if="$i18n.locale === 'en'">
             <h1>The MIT License (MIT)</h1>
             <p>
                 Copyright (c) Yannick Spoerl <a href="mailto:yannick@yannickspoerl.de">yannick@yannickspoerl.de</a> (https://github.com/yannickspoerl)
@@ -48,11 +48,20 @@
 
 <script>
 export default {
-    name: 'License'
-
+    name: 'License',
 }
 </script>
 
-<style>
+<style lang="stylus">
+@import '~assets/style/index'
+.content-wrapper
+  padding 160px 15px 80px 15px
+  min-height calc(100vh - 80px - 60px - 160px)
+  max-width $contentWidth
+  margin 0 auto
 
+  @media (max-width: $MQMobile)
+    &
+      padding 100px 15px 20px 15px
+      min-height calc(100vh - 20px - 60px - 100px)
 </style>

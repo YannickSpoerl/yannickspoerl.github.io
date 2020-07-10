@@ -1,4 +1,8 @@
 export default {
+    error: {
+        title: 'Looks, like you did a wrong turn 🥴',
+        button: '↶ Back to safety!'
+    },
     pgp: {
         title: 'You want to send me encrypted messages?',
         subtitle: 'Use my personal <a style="text-decoration-line: none" href="/yannickspoerl.asc">PGP-public key</a> 🔒'
