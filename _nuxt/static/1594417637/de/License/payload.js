@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/de/License", {data:[{}],fetch:[],mutations:void 0});
