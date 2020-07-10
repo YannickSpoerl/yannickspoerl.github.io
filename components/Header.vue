@@ -18,9 +18,8 @@
               </NavLink>
             </li>
             <li class="nav-item" style="cursor: pointer">
-              <a @click="changeLocale()">
-                <flag :squared="false" :iso="flagMapping[$i18n.locale]"/>
-              </a>
+              <nuxt-link v-if="$i18n.locale === 'de'" :to="switchLocalePath('en')">English 🇬🇧</nuxt-link>
+              <nuxt-link v-if="$i18n.locale === 'en'" :to="switchLocalePath('de')">Deutsch 🇩🇪</nuxt-link>
             </li>
           </ul>
         </div>
@@ -31,36 +30,6 @@
 
 <script>
 export default {
-  data () {
-    return {
-      /**
-       * map locales to flag-isos
-       */
-      flagMapping: {
-        de: 'gb',
-        en: 'de'
-      }
-    }
-  },
-  computed: {
-    activeLink () {
-      return this.$router.currentRoute
-    }
-  },
-  methods: {
-    /**
-     * change local and persist in cookie
-     */
-    changeLocale () {
-      if (this.$i18n.locale === 'de') {
-        this.$i18n.locale = 'en'
-        localStorage.setItem('yannickspoerlde-locale', 'en')
-        return
-      }
-      this.$i18n.locale = 'de'
-      localStorage.setItem('yannickspoerlde-locale', 'de')
-    }
-  }
 }
 </script>
 

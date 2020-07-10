@@ -18,9 +18,8 @@
           <NavLink :link="item.link">{{ $t('navbar.' + item.text) }}</NavLink>
         </li>
         <li class="mobile-nav-item" style="cursor: pointer">
-          <a @click="changeLocale()">
-            <flag :squared="false" :iso="flagMapping[$i18n.locale]"/>
-          </a>
+          <nuxt-link v-if="$i18n.locale === 'de'" :to="switchLocalePath('en')">English</nuxt-link>
+          <nuxt-link v-if="$i18n.locale === 'en'" :to="switchLocalePath('de')">Deutsch</nuxt-link>
         </li>
         </ul>
       </div>

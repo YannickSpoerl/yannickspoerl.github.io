@@ -16,7 +16,6 @@
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
     "vue-feather-icons": "^5.0.0",
-    "vue-flag-icon": "^1.0.6",
     "vue-scroll-snap": "^0.1.7"
   },
   "devDependencies": {}

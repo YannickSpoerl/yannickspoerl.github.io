@@ -1,9 +1,8 @@
 <template>
-  <router-link v-if="!isExternal(this.link) && this.link[0] !== '#'"
-    :to="this.link "
-    class="nav-link">
+  <nuxt-link v-if="!isExternal(this.link) && this.link[0] !== '#'"
+    class="nav-link" :to="localePath(this.link)">
     <slot/>
-  </router-link>
+    </nuxt-link>
   <a v-else
     :href="computedLink"
     :target="isMailto(normalizedlink) || isTel(normalizedlink) || this.link[0] === '#' ? null : '_blank'"

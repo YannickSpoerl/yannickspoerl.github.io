@@ -1,4 +1,8 @@
 export default {
+    pgp: {
+        title: 'Du willst mir verschlüsselte Nachrichten senden?',
+        subtitle: 'Nutze meinen <a style="text-decoration-line: none" href="/yannickspoerl.asc">PGP-public key</a> 🔒'
+    },
     navbar: {
         about: 'Über mich',
         socials: 'Kontakt',

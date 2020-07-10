@@ -37,7 +37,6 @@ export default {
   */
   plugins: [
     '~plugins/loadContent.js',
-  { src: '~plugins/loadFlagModule.js', ssr: false }
   ],
   /*
   ** Auto import components
