@@ -32,10 +32,10 @@ export default {
     ]
   },
   i18n: {
-    locales: ['en', 'de'],
-    defaultLocale: 'en',
+    locales: ['de', 'en'],
+    defaultLocale: 'de',
     vueI18n: {
-      fallbackLocale: 'de',
+      fallbackLocale: 'en',
       messages: messages
     },
     detectBrowserLanguage: {
