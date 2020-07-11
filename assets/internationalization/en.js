@@ -57,6 +57,6 @@ export default {
     copyright: {
         license: 'MIT Licensed',
         notice: 'Datenschutzhinweis',
-        copyright: '2019 - 2020 Yannick Spoerl'
+        copyright: '© 2019 - 2020'
     }
 }
