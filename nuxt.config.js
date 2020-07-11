@@ -24,6 +24,13 @@ export default {
     'nuxt-i18n',
     '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    hostname: 'https://www.yannickspoerl.com',
+    exclude: [
+      '/privacy',
+      '/license'
+    ]
+  },
   i18n: {
     locales: ['en', 'de'],
     defaultLocale: 'en',
