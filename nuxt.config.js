@@ -4,11 +4,11 @@ export default {
   mode: 'universal',
   target: 'static',
   head: {
-    title: 'Yannick Spoerl',
+    title: 'Yannick Spoerl - meine persönliche Website',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Yannick Spoerl - My personal website' }
+      { hid: 'description', name: 'description', content: 'Yannick Spoerl - Meine persönliche Website' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -32,7 +32,16 @@ export default {
     ]
   },
   i18n: {
-    locales: ['de', 'en'],
+    locales: [
+      {
+        code: 'de',
+        iso: 'de-De'
+      },
+      {
+        code: 'en',
+        iso: 'en-US'
+      }
+    ],
     defaultLocale: 'de',
     vueI18n: {
       fallbackLocale: 'en',
