@@ -35,11 +35,11 @@ export default {
     locales: [
       {
         code: 'de',
-        iso: 'de-De'
+        iso: 'de'
       },
       {
         code: 'en',
-        iso: 'en-US'
+        iso: 'en'
       }
     ],
     defaultLocale: 'de',
