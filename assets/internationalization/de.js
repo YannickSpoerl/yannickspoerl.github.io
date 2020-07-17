@@ -5,7 +5,7 @@ export default {
     },
     pgp: {
         title: 'Du willst mir verschlüsselte Nachrichten senden?',
-        subtitle: 'Nutze meinen <a style="text-decoration-line: none" href="/yannickspoerl.asc">PGP-public key</a> 🔒'
+        subtitle: 'Nutze meinen <a style="text-decoration-line: none" href="/downloads/yannickspoerl.asc">PGP-public key</a> 🔒'
     },
     navbar: {
         about: 'Über mich',
@@ -47,8 +47,8 @@ export default {
     },
     resume: {
         title: 'Und falls du einen Blick in meinen Lebenslauf werfen willst 📒',
-        subtitle: 'Hier ist mein <a href="https://www.yannickspoerl.de/Resume_EN.pdf" target="_blank" class="external" style="color: #fff">Lebenslauf auf Englisch 🇬🇧</a> und mein ' +
-            '<a href="https://www.yannickspoerl.de/Resume_DE.pdf" target="_blank" style=" color: #fff">Lebenslauf auf Deutsch 🇩🇪</a>',
+        subtitle: '<a href="/downloads/Resume_EN.pdf" target="_blank" style="color: #fff">Lebenslauf auf Englisch 🇬🇧</a> und mein ' +
+            '<a href="/downloads/Resume_DE.pdf" target="_blank" style="color: #fff">Lebenslauf auf Deutsch 🇩🇪</a>',
         button: 'Du bist super! →'
     },
     end: {

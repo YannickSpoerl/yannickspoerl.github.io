@@ -5,7 +5,7 @@ export default {
     },
     pgp: {
         title: 'You want to send me encrypted messages?',
-        subtitle: 'Use my personal <a style="text-decoration-line: none" href="/yannickspoerl.asc">PGP-public key</a> 🔒'
+        subtitle: 'Use my personal <a style="text-decoration-line: none" href="/downloads/yannickspoerl.asc">PGP-public key</a> 🔒'
     },
     navbar: {
         about: 'About',
@@ -47,8 +47,8 @@ export default {
     },
     resume: {
         title: 'And in case you want to take a look at my résumé 📒',
-        subtitle: 'My <a href="/Resume_EN.pdf" target="_blank" style="color: #fff">résumé in english 🇬🇧</a> and my ' +
-            '<a href="/Resume_DE.pdf" target="_blank" style="color: #fff">résumé in german 🇩🇪</a>',
+        subtitle: 'My <a href="/downloads/Resume_EN.pdf" target="_blank" style="color: #fff">résumé in english 🇬🇧</a> and my ' +
+            '<a href="/downloads/Resume_DE.pdf" target="_blank" style="color: #fff">résumé in german 🇩🇪</a>',
         button: 'That was great! →'
     },
     end: {

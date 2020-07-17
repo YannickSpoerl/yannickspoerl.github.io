@@ -17,7 +17,7 @@ export default {
     computed: {
         downloads () {
             const files = []
-            const filePaths = require.context('@/static/downloads/')
+            const filePaths = require.context('@/static/downloads')
             filePaths.keys().forEach(file => {
                 files.push({
                     path: '/downloads' + file.substring(1),
