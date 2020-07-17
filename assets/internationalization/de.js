@@ -12,7 +12,8 @@ export default {
         socials: 'Kontakt',
         blog: 'Blog',
         apps: 'Apps',
-        resume: 'Lebenslauf'
+        resume: 'Lebenslauf',
+        downloads: 'Downloads'
     },
     hello: {
         title: 'Hallo und willkommen auf meiner Website 👋',
@@ -59,5 +60,8 @@ export default {
         license: 'MIT Lizenz',
         notice: 'Datenschutzhinweis',
         copyright: '© 2019 - 2020'
+    },
+    downloads: {
+        title: 'Hier sind alle meine öffentlichen Dateien zum Download 📂'
     }
 }

@@ -20,6 +20,10 @@
       {
         "text": "resume",
         "link": "#resume"
+      },
+      {
+        "text": "downloads",
+        "link": "/downloads"
       }
     ],
     "contact": [
