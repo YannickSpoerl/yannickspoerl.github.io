@@ -4,7 +4,7 @@ export default {
   mode: 'universal',
   target: 'static',
   head: {
-    title: 'Yannick Spoerl - meine persönliche Website',
+    title: 'Home - Yannick Spoerl',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
