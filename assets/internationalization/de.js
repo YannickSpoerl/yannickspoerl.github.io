@@ -39,8 +39,8 @@ export default {
         button: 'Das wird langsam zu viel →'
     },
     apps: {
-        title: 'Hier wird noch gearbeitet 🏗',
-        subtitle: 'Schaue demnächst nochmal vorbei!',
+        title: 'Also schreibst du Web-Apps?',
+        subtitle: 'Genau! Schaue im App-Dashboard vorbei 🕹️',
         button: 'Werde ich machen →'
     },
     resume: {

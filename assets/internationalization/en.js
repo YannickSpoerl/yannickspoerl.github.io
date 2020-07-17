@@ -39,8 +39,8 @@ export default {
         button: 'This is getting out of control →'
     },
     apps: {
-        title: 'This is still under construction 🏗',
-        subtitle: 'Stop by again soon!',
+        title: 'So you build web applications?',
+        subtitle: 'That\'s right! Get an overview at the dashboard 🕹️',
         button: 'Will do →'
     },
     resume: {
