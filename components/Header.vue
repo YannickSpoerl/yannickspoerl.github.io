@@ -4,7 +4,7 @@
       <div class="header-wrapper">
         <div class="title">
           <NavLink link="#hello" class="home-link">
-            <img src="@yannickspoerl/corporate-design-yannickspoerl/logo.png" width="7.4%" alt="Logo"/>
+            <img src="@yannickspoerl/corporate-design-yannickspoerl/logo.png" width="7.2%" alt="Logo"/>
               &#160;&#160;
               {{ $site.title }}
           </NavLink>
