@@ -11,6 +11,7 @@ export default {
         about: 'Über mich',
         socials: 'Kontakt',
         blog: 'Blog',
+        apps: 'Apps',
         resume: 'Lebenslauf'
     },
     hello: {

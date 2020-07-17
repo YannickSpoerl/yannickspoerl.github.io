@@ -11,6 +11,7 @@ export default {
         about: 'About',
         socials: 'Socials',
         blog: 'Blog',
+        apps: 'Apps',
         resume: 'Résumé'
     },
     hello: {
