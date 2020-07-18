@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { GithubIcon, TwitterIcon, InstagramIcon, MailIcon } from 'vue-feather-icons'
+import { GithubIcon, TwitterIcon, InstagramIcon, MailIcon, KeyIcon } from 'vue-feather-icons'
 
 export default {
   name: 'socials',
@@ -30,6 +30,7 @@ export default {
         case 'twitter': return TwitterIcon
         case 'instagram': return InstagramIcon
         case 'mail': return MailIcon
+        case 'pgp': return KeyIcon
       }
     }
   }

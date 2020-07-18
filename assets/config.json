@@ -42,6 +42,10 @@
         {
           "type": "mail",
           "link": "mailto:yannick@yannickspoerl.de"
+        },
+        {
+          "type": "pgp",
+          "link": "/pgp"
         }
     ],
     "copyright": [
