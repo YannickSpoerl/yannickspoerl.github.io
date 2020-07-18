@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0 - 18.7.2020
+
+### Added
+
+- Added PGP to socials
+
 ## 1.2.0 - 17.7.2020
 
 ### Added
