@@ -1,5 +1,11 @@
 # Changelog
 
+## 12.2 - 7.9.2020
+
+### Added
+
+- Sleep page
+
 ## 1.2.1 - 18.7.2020
 
 ### Added

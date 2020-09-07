@@ -7,7 +7,7 @@
                 <h3 class="audio-title">{{ file.name }}
                     (<a :href="file.path" download>Download</a>)
                 </h3>
-                <audio controls style="width: 100vh">
+                <audio controls style="width: 100%">
                     <source :src="file.path" type="audio/mp3"/>
                 </audio>
                 <hr v-if="index !== audios.length - 1"/>
