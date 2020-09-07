@@ -2,9 +2,15 @@
   <div class="content-wrapper">
     <div style="text-align: center">
         <h1>{{ $t('sleep.title') }}</h1>
-        <ul>
-            <li v-for="(file, index) in downloads" :key="index">
-                <a :href="file.path" download>{{ file.name }}</a>
+        <ul style="list-style:none">
+            <li v-for="(file, index) in audios" :key="index" style="margin: 30px">
+                <h3 class="audio-title">{{ file.name }}
+                    (<a :href="file.path" download>Download</a>)
+                </h3>
+                <audio controls style="width: 100vh">
+                    <source :src="file.path" type="audio/mp3"/>
+                </audio>
+                <hr v-if="index !== audios.length - 1"/>
             </li>
         </ul>
     </div>
@@ -13,9 +19,9 @@
 
 <script>
 export default {
-    name: 'Downloads',
+    name: 'Sleep',
     computed: {
-        downloads () {
+        audios () {
             const files = []
             const filePaths = require.context('@/static/audio')
             filePaths.keys().forEach(file => {
@@ -32,6 +38,7 @@ export default {
 
 <style lang="stylus">
 @import '~assets/style/index'
+
 .content-wrapper
   padding 160px 15px 80px 15px
   min-height calc(100vh - 80px - 60px - 160px)
