@@ -63,5 +63,8 @@ export default {
     },
     downloads: {
         title: 'Here are my public files as downloads 📂'
+    },
+    sleep: {
+        title: 'Sleeping-help ... 🥱'
     }
 }
