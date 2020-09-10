@@ -23,7 +23,7 @@ export default {
     me: {
         title: 'My name is Yannick ...',
         subtitle: '... and I\'m a computer science student from Germany 🇩🇪',
-        text1: 'I\'m passionate about frontend-development, especially with Vue.js, also I work as a part-time web developer.',
+        text1: 'I\'m passionate about frontend-development, especially with Vue.js, I also work as a part-time web developer.',
         text2: 'I\'m also really interested in logic and reasoning, and I\'m currently writing my bachelor\'s thesis about abstract argumentation 🎓',
         text3: 'Other than that, I enjoy running 🏃 and heavy metal music 🎸',
         button: 'What else? →'
