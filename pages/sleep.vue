@@ -30,7 +30,9 @@ export default {
                     name: file.substring(2).split('.')[0]
                 })  
             })
-            return files
+            return files.sort((file1, file2) => {
+                return file2.name.localeCompare(file1.name)
+            })
         }
     }
 }

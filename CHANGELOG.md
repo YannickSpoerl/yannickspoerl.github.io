@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.1 - 25.9.2020
+
+### Changed
+
+- Audios on /sleep page no reverse ordered with most recent first
+
 ## 1.3.0 - 7.9.2020
 
 ### Added
