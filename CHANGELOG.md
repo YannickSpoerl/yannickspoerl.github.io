@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.2 - 25.9.2020
+
+### Fixed
+
+- 404 page changed from github default to custom
+
 ## 1.3.1 - 25.9.2020
 
 ### Changed
