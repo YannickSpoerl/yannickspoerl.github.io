@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/en/sleep", {data:[{}],fetch:[],mutations:void 0});
