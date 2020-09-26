@@ -13,6 +13,7 @@
                 <hr v-if="index !== audios.length - 1"/>
             </li>
         </ul>
+        <pagination :active="activePage" :total="2" @click-on="navToPage"/>
     </div>
   </div>
 </template>
@@ -20,6 +21,16 @@
 <script>
 export default {
     name: 'Sleep',
+    data: () => {
+        return {
+            activePage: 0
+        }
+    },
+    methods: {
+        navToPage (page) {
+            this.activePage = page
+        }
+    },
     computed: {
         audios () {
             const files = []
@@ -30,9 +41,10 @@ export default {
                     name: file.substring(2).split('.')[0]
                 })  
             })
-            return files.sort((file1, file2) => {
+            files.sort((file1, file2) => {
                 return file2.name.localeCompare(file1.name)
             })
+            return files.splice(this.activePage * 4, (this.activePage + 1) * 4)
         }
     }
 }

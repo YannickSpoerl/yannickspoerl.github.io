@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.0 - 26.9.2020
+
+### Added
+
+- Pagination on sleep-page
+
 ## 1.3.2 - 25.9.2020
 
 ### Fixed
